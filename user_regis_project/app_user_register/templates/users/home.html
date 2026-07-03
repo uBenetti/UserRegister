@@ -11,7 +11,20 @@
     <title>User Register</title>
   </head>
   <body>
-    <h1>Register Me</h1>
+    <nav style="background-color: gray !important;" class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Register Me!</span>
+        </div>
+    </nav>
+
+    <form action="{% url 'users_list' %}" method="post">
+        <div style="text-align: center;" class="container">
+            <h1>User Register</h1>
+            Name <input name="name" class="form-control-sm" type="text">
+            Age <input name="age" class="form-control-sm" type="text">
+            <button class="form-control-sm">Send</button>
+        </div>
+    </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

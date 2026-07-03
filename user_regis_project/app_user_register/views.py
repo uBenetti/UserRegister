@@ -12,10 +12,10 @@ def users(request):
     new_user.save()
     # Showing all user already register in a new page
     users = {
-        'users': User.Object.all()
+        'users': User.objects.all()
     }
 
-    
+
 
     # Return data to the Users List page
-    return render(request, 'users/users.html', usuarios)
+    return render(request, 'users/users.html', users)

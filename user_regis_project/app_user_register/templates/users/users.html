@@ -5,5 +5,12 @@
             <th>name</th>
             <th>age</th>
         </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.id}}</td>
+        </tr>
+        {% endfor %}
     </table>
 </div>
